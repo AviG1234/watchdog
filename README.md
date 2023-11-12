@@ -20,7 +20,7 @@ This is a watchdog program written in C for a Linux machine that utilizes signal
 
 int main(int argc, char **argv) {
     // Activate the watchdog with parameters
-    status_ty status = MakeMeImmortal(3, 10, "/path/to/watchdog", argv);
+    status_ty status = MakeMeImmortal(3, 10, "/watchdog_files/wd_process", argv);
 
     if (status == ACTIVATION_SUCCESS) {
         // Your program logic here
